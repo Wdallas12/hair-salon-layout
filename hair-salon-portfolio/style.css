@@ -1,0 +1,284 @@
+/* ----- RESETS ------ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+/* ------ TYPOGRAPHY ------- */
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Trirong', serif;
+}
+
+
+/* ------- LAYOUT BY SECTION ------- */
+header, .navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    align-items: center;
+}
+header {
+    padding: 20px 20px;
+}
+.logo {
+    font-family: 'Allura', cursive;
+    font-size: 2.5rem;
+}
+.navbar {
+    list-style: none;
+    gap: 5%;
+    flex-grow: .5;
+    padding: 0;
+}
+.navbar > li:hover{
+    text-decoration: underline;
+    color:rgb(103, 103, 103);
+    cursor: pointer;
+}
+.navbar img {
+    height: 18px;
+}
+header > span {
+    cursor: pointer;
+}
+/* ------ MAIN ONE ------*/
+.diagnolBox {
+    background-image: url("img/backgroundmain.jpg");
+    background-size: cover;
+    padding-top: 500px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+}
+.mainSecOne {
+    width: 100%;
+    padding-bottom: 300px;
+    position: relative;
+}
+.mainOneText {
+    padding-left: 100px;
+}
+h1 {
+    font-size: 6.4rem;
+    font-weight: bolder;
+    color: white;
+}
+.mainOneText > p {
+    color: white;
+    font-size: 3.2rem;
+    filter: drop-shadow(1px 1px black);
+    letter-spacing: .2rem;
+    padding: 35px 0;
+}
+.shadowMainText {
+    filter: drop-shadow(2px 3px rgb(103, 103, 103));
+}
+.mainColorChange {
+    color: rgb(161, 243, 250);
+}
+button {
+    color: white;
+    background-color: rgb(186, 181, 181);
+    border: none;
+    cursor: pointer;
+    padding: 20px 15px;
+    font-size: 1.6rem;
+    letter-spacing: .15rem;
+}
+.offerBox {
+    position: absolute;
+    background-color: rgb(84, 84, 84);
+    width: 325px;
+    left: 100px;
+    top: 1000px;
+    padding: 60px 40px;
+    color: white;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    box-shadow: 14px 20px 0 lightblue;
+}
+.offerBox > button {
+    margin-top: 20px;
+    padding: 15px 15px;
+}
+.offerBox span {
+    font-size: 3.6rem;
+    font-weight: bolder;
+}
+.offerBox > p:first-child {
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+/* ------ MAIN INFO -------*/
+.mainInformation {
+    display: flex;
+    text-align: center;
+    padding: 200px 100px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    gap: 50px;
+}
+.salonFeatures img {
+    height: 120px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.salonFeatures h3 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.salonFeatures p {
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+/* ------ MAIN ABOUT ----- */
+.mainAbout {
+    display: flex;
+    gap: 90px;
+    padding: 50px 100px;
+    background-color: lightblue;
+}.mainAbout h2 {
+    font-size: 3.6rem;
+}
+.mainAbout p {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding: 15px 0;
+}
+.mainAbout button {
+    margin-top: 10px;
+}
+.aboutVid {
+    margin-bottom: 4%;
+}
+/* ----- STAFF ----- */
+.mainStaff {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.staff > div {
+    display: flex;
+    flex-direction: column;
+}
+.staffLabels {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    text-align: center;
+    position: relative;
+}
+.staffMember1, .staffMember2, .staffMember3 {
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    background-color: black;
+    color: white;
+    padding: 10px 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 0 lightblue;
+}
+.staffMember1 {
+    left: 11.5%;
+}
+.staffMember3 {
+    right: 11.5%;
+}
+.staffName {
+    font-size: 2.2rem;
+}
+.staffRole {
+    font-size: 1.6rem;
+}
+/* ---- MAIN OFFER ----- */
+.mainDailyOffer {
+    padding: 100px 75px;
+    margin: 0 100px;
+    background-image: url(img/dailyoffer.jpg);
+    background-size: cover;
+    margin-top: 160px;
+}
+h4 {
+    font-size: 1.6rem;
+}
+.dailyOfferText p {
+    font-size: 2.4rem;
+    width: 35%;
+    padding: 20px 0;
+}
+.dailyOfferText span {
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+/* ------ LOOKBOOK ----- */
+.mainLookbook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    margin-top: 30px;
+}
+.mainLookbook h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+.mainLookbook > span {
+    font-size: 6rem;
+    line-height: 3rem;
+}
+.lookbookGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 70px;
+    grid-gap: 15px;
+}
+.lookbookAddIcon {
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+.lookbookGrid img{
+    object-fit: cover;
+    margin: 0 auto;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+/* ------ FOOTER ------- */
+footer{
+   margin: auto;
+   text-align: center;
+   background-color: lightgray;
+   padding: 10px 0;
+   font-weight: bolder;
+}
+footer > .logo {
+    filter: drop-shadow(1px 1px white)
+}
